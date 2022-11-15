@@ -15,11 +15,14 @@ const formatString = (arr) => {
     console.log(formatted);
 }
 
+// store the 'matchup' in an array
 const finalMatchup = [];
 
+// iterate over the object
 for (let prop in randomStrings) {
     optionIndex = randomIndex(randomStrings[prop].length);
 
+    // use object's properties to customize the matchup being added to finalMatchup
     switch(prop) {
         case 'governingBody' :
             finalMatchup.push(`Qatar 2022 ${randomStrings[prop][optionIndex]} World Cup Final:\n`);
